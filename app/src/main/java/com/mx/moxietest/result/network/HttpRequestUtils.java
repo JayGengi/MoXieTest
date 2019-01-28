@@ -26,7 +26,7 @@ public class HttpRequestUtils {
 
     // app_id用于服务端获取OCR结果 必须在服务端使用 生产环境app_id鉴权会校验服务器白名单 此处仅供调试使用
     //TODO #error 请填入测试的app_id 并删除此行
-    public static final String APP_ID="00461de2d0b94c38a04e37828b19dee5";
+    public static final String APP_ID="";
 
     public static OkHttpClient getOkhttp(){
         if (okHttpClient==null){
