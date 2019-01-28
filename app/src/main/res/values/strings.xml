@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">魔蝎测试</string>
+    <string name="accessibility_name">魔蝎测试</string>
+    <string name="string_main_restart_text" translatable="false">再次检测</string>
+    <string name="OCR_loading" translatable="false">正在请求服务器\n识别身份证信息</string>
+</resources>
