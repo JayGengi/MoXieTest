@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/id_iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/icon_scan_back" />
+
+        <TextView
+            android:id="@+id/id_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="扫描正面"
+            android:textColor="@color/color_font_black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/id_rg_scan_result_switch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_rb_scan_front_result"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_scan_result_front_btn_bg_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="正面结果"
+            android:textColor="@drawable/drawable_scan_result_btn_text_selector" />
+
+        <RadioButton
+            android:id="@+id/id_rb_scan_back_result"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_scan_result_back_btn_bg_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="反面结果"
+            android:textColor="@drawable/drawable_scan_result_btn_text_selector" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
+
+        <com.mx.moxietest.ocr.view.FrontCardResultView
+            android:id="@+id/id_lcrv_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </com.mx.moxietest.ocr.view.FrontCardResultView>
+
+        <com.mx.moxietest.ocr.view.BackCardResultView
+            android:id="@+id/id_lcrv_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </com.mx.moxietest.ocr.view.BackCardResultView>
+
+        <LinearLayout
+            android:id="@+id/id_ll_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:background="@drawable/drawble_loading_bg"
+            android:padding="15dp"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/OCR_loading"
+                android:textColor="@color/color_font_black"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/id_tv_complete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/drawable_main_scan_btn_bg_selector"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@drawable/drawable_main_scan_btn_text_selector"
+        android:textSize="16sp" />
+</LinearLayout>

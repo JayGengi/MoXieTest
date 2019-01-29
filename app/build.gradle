@@ -44,6 +44,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     implementation(name: 'com.moxie.liveness-1.2.0-Release', ext: 'aar')
+    implementation(name: 'com.moxie.ocr-1.2.0-Release', ext: 'aar')
     // 运行时权限
 //    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
     implementation 'com.alibaba:fastjson:1.1.59.android'

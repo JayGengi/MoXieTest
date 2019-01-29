@@ -33,6 +33,11 @@
         <activity android:name=".MXLivenessDetectShowActivity"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".ocr.activity.ScanIDCardResultActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
