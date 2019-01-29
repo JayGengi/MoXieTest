@@ -181,6 +181,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case KEY_PERMISSION_REQUEST_ID_CARD_BACK:
             case KEY_PERMISSION_REQUEST_ID_CARD_BOTH:
             case KEY_PERMISSION_REQUEST_ID_CARD_FRONT:
+
                 // OCR检测的结果回调
                 switch (resultCode) {
                     // OCR识别成功
